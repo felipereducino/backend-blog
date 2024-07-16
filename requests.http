@@ -1,0 +1,28 @@
+GET http://localhost:3000/user
+
+###
+
+GET http://localhost:3000/user/2
+
+###
+POST http://localhost:3000/user
+content-type: application/json
+
+{
+    "name": "Felipe Reducino",
+    "email": "felipe-reducino@hotmail.com",
+    "password": "dev123"
+}
+
+###
+PATCH http://localhost:3000/user/2
+content-type: application/json
+
+{
+    "name": "Maria Luiza Monteiro de Camargo Cleto",
+    "email": "malumonteirocc@hotmail.com"
+}
+
+###
+
+DELETE http://localhost:3000/user/1
